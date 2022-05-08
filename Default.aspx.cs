@@ -46,7 +46,7 @@ namespace Laboratorio_No._11
         protected void Guardar()
         {
             string json = JsonConvert.SerializeObject(universidades);           
-            string archivo = Server.MapPath("Notas.json");          
+            string archivo = Server.MapPath("Universidades.json");          
             System.IO.File.WriteAllText(archivo, json);
         }
 
